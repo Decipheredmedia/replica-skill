@@ -1,0 +1,17 @@
+{
+  "host": "http://localhost:11434",
+  "installed": [],
+  "assignment": {
+    "recon": "llava:7b",
+    "architect": "llama3.1:8b",
+    "design": "llama3.1:8b",
+    "build": "qwen2.5-coder:7b",
+    "backend": "qwen2.5-coder:7b",
+    "test": "qwen2.5-coder:7b",
+    "diff": "llava:7b",
+    "entrepreneur": "llama3.1:8b",
+    "brand": "llama3.1:8b",
+    "launch": "llama3.1:8b",
+    "deploy": "qwen2.5-coder:7b"
+  }
+}

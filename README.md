@@ -185,6 +185,17 @@ numbers. Every claim has a link, and the sample size is stated.
 read the terms of anything you used, and talk to a lawyer before launch if
 there is money on the line. This is not legal advice.
 
+## Running it on local models instead
+
+`ollama-orchestrator/` runs the same eleven prompts against models you
+already have pulled in [Ollama](https://ollama.com) on your own box or
+Ubuntu VPS: no Claude, no API key. It detects what is installed, assigns the
+best fit to each step, and can drive the whole pipeline or hand off to
+[cairn](https://github.com/cairn-dev/cairn) and
+[hermes-agents](https://github.com/Decipheredmedia/hermes-agents) for the
+parts that need a hosted model or an unattended agent loop. See
+`ollama-orchestrator/README.md`.
+
 ## Files
 
 ```
@@ -199,6 +210,7 @@ replica-entrepreneur/  SKILL.md, reviews.py, themes.json
 replica-brand/         SKILL.md, sweep.py
 replica-launch/        SKILL.md, listing.py, listing.example.json
 replica-deploy/        SKILL.md, preflight.md
+ollama-orchestrator/   README.md, models.py, orchestrate.py, setup-vps.sh
 tests/                 the tests for every tool
 ```
 
